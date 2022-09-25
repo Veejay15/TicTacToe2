@@ -1,0 +1,29 @@
+$cell: 17vmin;
+$line: 0.4vmin;
+
+#board {
+  background-color: rgb(135, 88, 18);
+  display: grid;
+  grid-template-rows: $cell $cell $cell;
+  grid-template-columns: $cell $cell $cell;
+  gap: $line;
+  width: fit-content;
+  margin: 3vmin auto;
+  padding: $line;
+  border-radius: $line;
+  font-family: "Comfortaa", cursive;
+
+  .cell {
+    background-color: antiquewhite;
+    cursor: pointer;
+    font-size: $cell;
+  }
+
+  .clicked {
+    background-color: rgb(247, 221, 187);
+  }
+
+  .highlighted {
+    background-color: rgb(242, 198, 141);
+  }
+}

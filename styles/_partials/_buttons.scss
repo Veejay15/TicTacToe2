@@ -1,0 +1,34 @@
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  height: 5vmin;
+  width: 50vmin;
+  margin: 0 auto;
+}
+
+#replay {
+  margin: 2vmin auto 0 auto;
+  height: 5vmin;
+}
+
+.button {
+  background-color: white;
+  width: 15vmin;
+  border: none;
+  border-radius: 0.5vmin;
+  font-family: inherit;
+  font-size: 2vmin;
+}
+
+.fa-arrow-left {
+  transform: translateX(-1vmin);
+}
+.fa-arrow-right {
+  transform: translateX(1vmin);
+}
+.rotate-cw {
+  animation: rotate-cw 200ms linear 1 normal forwards;
+}
+.rotate-ccw {
+  animation: rotate-ccw 200ms linear 1 normal forwards;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/global.js" defer></script>
+    <script src="./scripts/players.js" type="module" type="module" defer></script>
+    <script src="./scripts/score.js" type="module" defer></script>
+    <script src="./scripts/board.js" type="module" defer></script>
+    <script src="./scripts/buttons.js" type="module" defer></script>
+    <script src="./scripts/helper.js" type="module" defer></script>
+    <script
+      src="https://kit.fontawesome.com/ee89b5ee3e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>TIC TAC TOE | ULTIMATE BATTLE</h1>
+    <section id="players">
+      <div id="player-one">
+        <label>Player One:</label>
+        <input
+          type="text"
+          placeholder="enter your name"
+          autofocus
+          maxlength="10"
+          spellcheck="false"
+        />
+      </div>
+      <div id="player-two">
+        <label>Player Two:</label>
+        <input
+          type="text"
+          placeholder="enter your name"
+          maxlength="10"
+          spellcheck="false"
+        />
+      </div>
+      <div id="info">
+        <p id="name-left"></p>
+        <p id="score-left"></p>
+        <p id="message"></p>
+        <p id="name-right"></p>
+        <p id="score-right"></p>
+      </div>
+    </section>
+    <section id="board">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </section>
+    <section id="buttons">
+      <button id="undo" class="button">
+        <i class="fa-solid fa-rotate-left"></i> UNDO
+      </button>
+      <button id="restart" class="button">
+        <i class="fa-solid fa-rotate"></i> RESTART
+      </button>
+      <button id="redo" class="button">
+        REDO <i class="fa-solid fa-rotate-right"></i>
+      </button>
+    </section>
+
+    <button id="replay" class="button">
+      <i class="fa-solid fa-play"></i> REPLAY
+    </button>
+  </body>
+</html>
